@@ -8,7 +8,7 @@ import TaskContent from "../components/taskprograms/TaskContent";
 
 export default function Home() {
   return <>
-       <div className='container  p-[3rem]  font-semibold trap' >
+       <div>
       <Navbar />
       <Header />
       <Work />

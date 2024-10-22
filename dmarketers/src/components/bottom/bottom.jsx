@@ -1,26 +1,30 @@
-import { buttomAsset } from "../../assets/asset"
+import { buttomAsset } from "../../assets/asset";
 export default function Bottom () {
-  return <>
-    <div className="flex mt-[10rem]">
-          <div className="w-[634px] h-[261px] mt-[40px]">
-        <p className="font-[700] font-[trap] text-[28px] ">
-          GET GOING WITH Project X
-        </p>
-          <h1 className="font-bold text-[64px]">
+  return (
+    <>
+     <section className="bg-[#FFFFFF] h-auto">
+     <div className="flex flex-col md:flex-row justify-between items-center w-full md:px-8 mt-5">
+          <div className="text-center md:text-left md:w-1/2 md:pr-8">
+        <h1 className="font-[700] text-[28px] text-[#212529">
+          GET GOING WITH Project X
+        </h1>
+          <h1 className="font-[700] text-[32px] md:text-[64px] text-[#212529]">
         Post. <span className="text-dmarket"> Earn</span>. Grow with <span className="text-dmarket">  Project X!</span>
         </h1>
-        <button className="w-[261px] h-[47px] p-4 border-2 rounded-[24px] border-[#3AA4D9] flex items-center justify-center">
-          Join us on <span> <img src={buttomAsset.twitter} alt="icon" className="ml-4"/></span>
+        <button className="bg-[transparent] cursor-pointer pt-[8px] pr-[24px] pb-[8px] pl-[24px] rounded-[24px] gap-2 border-[1px] border-[#3AA4D9] flex items-center">
+          Join us on 
+          <img src={buttomAsset.twitter} alt="icon" className="w-[28px] h-[28px]"/>
         </button>
     </div>
     
-    <div className=" h-[471px] mr-[-550px] ]">
-        <img src={buttomAsset.frame39} alt="icon" className="mb-[20px] relative  left-[350px]"/>
-        <div className="">
-           <img src={buttomAsset.frame40} alt="icon" className="mb-[20px]  relative left-[190px] " />
-       </div>
-        <img src={buttomAsset.frame41} alt="icon" className="mb-[20px]  relative left-[-20px]" />
+    <div className="mt-6 md:mt-0 md:w-1/2 md:flex md:justify-end">
+        <img 
+          src={buttomAsset.Bitcoin} 
+          alt="Bitcoin Image" 
+          className="w-[200px] h-[150px] md:w-[590px] md:h-[408.82px] object-contain"/>
     </div>
 </div>
-  </>
+     </section>
+    </>
+  )
 }
